@@ -201,7 +201,7 @@ overflow: hidden;
 }
 .error-section{
  min-height:100vh;
-      position:relative;
+      
       overflow:hidden;
       padding:40px 20px 120px;
 }
@@ -217,4 +217,29 @@ overflow: hidden;
   font-size:clamp(1.5rem, 4vw, 2.5rem);
       font-weight:700;
       color:#111;
+}
+
+.description{
+  font-size:clamp(1rem, 2vw, 1.4rem);
+      color:#666;
+      line-height:1.5;
+}
+.btn-home{
+    position:absolute;
+      bottom:35px;
+      left:50%;
+      transform:translateX(-50%);
+      background:#d8ff2f;
+      border:none;
+      border-radius:14px;
+      padding:16px 40px;
+      font-weight:800;
+      font-size:1rem;
+      color:#111;
+      transition:.3s;
+      z-index:3;
+}
+.btn-home:hover{
+ background:#c5eb28;
+      transform:translateX(-50%) scale(1.03);
 }
