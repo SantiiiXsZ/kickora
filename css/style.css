@@ -162,3 +162,33 @@ h3,
 .boton-menu-kickora:focus {
   box-shadow: none;
 }
+
+/* BREADCRUMB KICKORA */
+
+.breadcrumb-kickora {
+  background-color: var(--color-fondo);
+  padding: 18px 0 8px;
+}
+
+.breadcrumb-kickora .breadcrumb {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.breadcrumb-kickora .breadcrumb-item a {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+}
+
+.breadcrumb-kickora .breadcrumb-item a:hover {
+  color: var(--color-negro);
+}
+
+.breadcrumb-kickora .breadcrumb-item.active {
+  color: var(--color-negro);
+  font-weight: 700;
+}
+
+.breadcrumb-kickora .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--color-texto-secundario);
+}
