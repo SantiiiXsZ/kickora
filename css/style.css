@@ -270,3 +270,229 @@ overflow: hidden;
       }
 
     }
+
+/* FOOTER KICKORA */
+
+.footer-kickora {
+  background: linear-gradient(135deg, var(--color-negro), var(--color-oscuro));
+  color: var(--color-blanco);
+  padding: 56px 0 22px;
+  margin-top: 60px;
+}
+
+.footer-kickora .logo-footer {
+  color: var(--color-blanco);
+}
+
+.footer-kickora .marca-logo {
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+}
+
+.texto-footer {
+  color: var(--color-texto-claro);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+.titulo-footer {
+  color: var(--color-blanco);
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.links-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-footer li {
+  margin-bottom: 9px;
+}
+
+.links-footer a {
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.links-footer a:hover {
+  color: var(--color-verde-lima);
+  padding-left: 4px;
+}
+
+.redes-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.redes-footer a {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  color: var(--color-blanco);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.redes-footer a:hover {
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+  border-color: var(--color-verde-lima);
+}
+
+.formulario-footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radio-redondo);
+  padding: 5px;
+  max-width: 340px;
+}
+
+.formulario-footer input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-blanco);
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.formulario-footer input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.formulario-footer button {
+  border: none;
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+  border-radius: var(--radio-redondo);
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.formulario-footer button:hover {
+  background-color: var(--color-verde-lima-hover);
+}
+
+.medios-pago span {
+  display: block;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 8px;
+}
+
+.iconos-pago {
+  display: flex;
+  gap: 8px;
+}
+
+.iconos-pago i {
+  width: 38px;
+  height: 28px;
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-inferior {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 42px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-inferior p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+}
+
+.footer-inferior a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: 14px;
+}
+
+.footer-inferior a:hover {
+  color: var(--color-verde-lima);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .navbar-kickora .navbar-collapse {
+    background-color: var(--color-tarjeta);
+    margin-top: 14px;
+    padding: 18px;
+    border-radius: var(--radio-medio);
+    border: 1px solid var(--color-borde);
+    box-shadow: var(--sombra-suave);
+  }
+
+  .menu-kickora {
+    gap: 4px;
+  }
+
+  .acciones-kickora {
+    margin-top: 12px;
+  }
+
+  .boton-principal-kickora {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-kickora,
+  .logo-footer {
+    font-size: 26px;
+  }
+
+  .marca-logo {
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+  }
+
+  .formulario-footer {
+    flex-direction: column;
+    border-radius: var(--radio-medio);
+  }
+
+  .formulario-footer button {
+    width: 100%;
+  }
+
+  .footer-inferior {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-inferior a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+}
