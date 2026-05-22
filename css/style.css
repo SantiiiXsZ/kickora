@@ -556,3 +556,7 @@ h3,
 .card:hover {
   box-shadow: 5px 5px 5px var(--color-negro);
 }
+
+.card-footer{
+  background:var(--color-exito);
+}
