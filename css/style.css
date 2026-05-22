@@ -497,6 +497,9 @@ overflow: hidden;
   }
 }
 
+
+
+
 /* CAROUSEL/BANNER */
 .banner {
   width: 100%;
@@ -508,6 +511,43 @@ overflow: hidden;
 
 @media (max-width: 768px) {
   .flyer{
-    height:30vh;   /* más bajo en pantallas pequeñas */
+    height:30vh;  
   }
+}
+
+/* BOTONES DE VENTA Y VER COLECCION  */
+.carousel-caption {
+  left: 10%;             
+  right: auto;           
+  bottom: 30%;           
+  text-align: left;      
+}
+
+.btn-venta {
+  background: var(--color-negro);
+  color: var(--color-blanco);
+  border: 1px solid var(--color-negro);
+  border-radius: 6px;
+  padding: 8px 14px;
+  transition: 0.3s;
+}
+
+.btn-venta:hover {
+  background: var(--color-verde-lima);
+  color: var(--color-negro);
+  border-color: var(--color-verde-lima);
+}
+
+
+.btn-outline-light {
+  border: 1px solid var(--color-blanco);
+  color: var(--color-blanco);
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+  background: var(--color-blanco);
+  color: var(--color-negro);
 }
