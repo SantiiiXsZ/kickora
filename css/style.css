@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
   /* Colores principales */
-  --color-fondo: #F5F2EC;
-  --color-tarjeta: #FAF8F2;
-  --color-blanco: #FFFFFF;
-  --color-negro: #0B0D0E;
+  --color-fondo: #f5f2ec;
+  --color-tarjeta: #faf8f2;
+  --color-blanco: #ffffff;
+  --color-negro: #0b0d0e;
   --color-oscuro: #111417;
 
   /* Textos */
-  --color-texto-principal: #0B0D0E;
-  --color-texto-secundario: #6E6E6E;
+  --color-texto-principal: #0b0d0e;
+  --color-texto-secundario: #6e6e6e;
   --color-texto-claro: rgba(255, 255, 255, 0.68);
 
   /* Marca */
-  --color-verde-lima: #C8FF2E;
-  --color-verde-lima-hover: #A6D927;
+  --color-verde-lima: #c8ff2e;
+  --color-verde-lima-hover: #a6d927;
 
   /* Neutros */
-  --color-beige: #E7D8BE;
-  --color-beige-oscuro: #C7B99F;
-  --color-borde: #DDD6C8;
-  --color-gris-claro: #E8E4DA;
+  --color-beige: #e7d8be;
+  --color-beige-oscuro: #c7b99f;
+  --color-borde: #ddd6c8;
+  --color-gris-claro: #e8e4da;
 
   /* Estados */
-  --color-exito: #4F8A3D;
-  --color-error: #D94A4A;
+  --color-exito: #4f8a3d;
+  --color-error: #d94a4a;
 
   /* Sombras */
   --sombra-suave: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -44,7 +44,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--color-fondo);
   color: var(--color-texto-principal);
 }
@@ -54,7 +54,7 @@ h2,
 h3,
 .logo-kickora,
 .logo-footer {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -91,7 +91,7 @@ h3,
   align-items: center;
   justify-content: center;
   border-radius: var(--radio-chico);
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 26px;
   font-weight: 700;
   transform: skew(-8deg);
@@ -194,82 +194,78 @@ h3,
 }
 
 /* css-error-404 */
-.error-body{
+.error-body {
   min-height: 100vh;
-overflow: hidden;
+  overflow: hidden;
+}
+.error-section {
+  min-height: 100vh;
 
-}
-.error-section{
- min-height:100vh;
-      
-      overflow:hidden;
-      padding:40px 20px 120px;
-}
- 
-.title-404{
-  font-size:clamp(6rem, 18vw, 12rem);
-      font-weight:900;
-      line-height:1;
-      color:#000;
-      margin-bottom:10px;
-}
-.subtitle{
-  font-size:clamp(1.5rem, 4vw, 2.5rem);
-      font-weight:700;
-      color:#111;
+  overflow: hidden;
+  padding: 40px 20px 120px;
 }
 
-.description{
-  font-size:clamp(1rem, 2vw, 1.4rem);
-      color:#666;
-      line-height:1.5;
+.title-404 {
+  font-size: clamp(6rem, 18vw, 12rem);
+  font-weight: 900;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 10px;
 }
-.btn-home{
-    position:absolute;
-      bottom:65px;
-      left:50%;
-      transform:translateX(-50%);
-      background:#d8ff2f;
-      border:none;
-      border-radius:14px;
-      padding:16px 40px;
-      font-weight:800;
-      font-size:1rem;
-      color:#111;
-      transition:.3s;
-      z-index:3;
+.subtitle {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #111;
 }
-.btn-home:hover{
- background:#c5eb28;
-      transform:translateX(-50%) scale(1.03);
+
+.description {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #666;
+  line-height: 1.5;
 }
-.contenedor-zapatilla{
-  position:absolute;
-      bottom:90px;
-      left:50%;
-      transform:translateX(-50%) ;
-      width:min(90vw, 700px);
-      z-index:2;
+.btn-home {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d8ff2f;
+  border: none;
+  border-radius: 14px;
+  padding: 16px 40px;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #111;
+  transition: 0.3s;
+  z-index: 3;
 }
-.contenedor-zapatilla img{
-   width:100%;
-      object-fit:contain;
-      filter:drop-shadow(0 20px 30px rgba(0,0,0,.35));
+.btn-home:hover {
+  background: #c5eb28;
+  transform: translateX(-50%) scale(1.03);
+}
+.contenedor-zapatilla {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90vw, 700px);
+  z-index: 2;
+}
+.contenedor-zapatilla img {
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35));
 }
 /* Mobile */
-    @media (max-width:768px){
+@media (max-width: 768px) {
+  .contenedor-zapatilla {
+    bottom: 130px;
+    margin-top: 40px;
+  }
 
-      .contenedor-zapatilla{
-        
-        bottom:130px;
-        margin-top:40px;
-      }
-
-      .btn-home{
-        width:85%;
-      }
-
-    }
+  .btn-home {
+    width: 85%;
+  }
+}
 
 /* FOOTER KICKORA */
 
@@ -497,30 +493,26 @@ overflow: hidden;
   }
 }
 
-
-
-
 /* CAROUSEL/BANNER */
 .banner {
   width: 100%;
-  height: 80vh;        
-  object-fit:fill;  
+  height: 80vh;
+  object-fit: fill;
   object-position: center;
 }
 
-
 @media (max-width: 768px) {
-  .flyer{
-    height:30vh;  
+  .flyer {
+    height: 30vh;
   }
 }
 
 /* BOTONES DE VENTA Y VER COLECCION  */
 .carousel-caption {
-  left: 10%;             
-  right: auto;           
-  bottom: 30%;           
-  text-align: left;      
+  left: 10%;
+  right: auto;
+  bottom: 30%;
+  text-align: left;
 }
 
 .btn-venta {
@@ -538,7 +530,6 @@ overflow: hidden;
   border-color: var(--color-verde-lima);
 }
 
-
 .btn-outline-light {
   border: 1px solid var(--color-blanco);
   color: var(--color-blanco);
@@ -554,7 +545,14 @@ overflow: hidden;
 
 .img-categoria {
   width: 100%;
-  height: 300px;      
-  object-fit: cover;   
+  height: 300px;
+  object-fit: cover;
+}
+/*Sombra de Card */
+.card {
+  transition: box-shadow 0.3s ease;
 }
 
+.card:hover {
+  box-shadow: 5px 5px 5px var(--color-negro);
+}
