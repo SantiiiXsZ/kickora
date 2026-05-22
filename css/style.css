@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Colores principales */
+  --color-fondo: #F5F2EC;
+  --color-tarjeta: #FAF8F2;
+  --color-blanco: #FFFFFF;
+  --color-negro: #0B0D0E;
+  --color-oscuro: #111417;
+
+  /* Textos */
+  --color-texto-principal: #0B0D0E;
+  --color-texto-secundario: #6E6E6E;
+  --color-texto-claro: rgba(255, 255, 255, 0.68);
+
+  /* Marca */
+  --color-verde-lima: #C8FF2E;
+  --color-verde-lima-hover: #A6D927;
+
+  /* Neutros */
+  --color-beige: #E7D8BE;
+  --color-beige-oscuro: #C7B99F;
+  --color-borde: #DDD6C8;
+  --color-gris-claro: #E8E4DA;
+
+  /* Estados */
+  --color-exito: #4F8A3D;
+  --color-error: #D94A4A;
+
+  /* Sombras */
+  --sombra-suave: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --sombra-tarjeta: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+  /* Bordes */
+  --radio-chico: 8px;
+  --radio-medio: 16px;
+  --radio-grande: 28px;
+  --radio-redondo: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto-principal);
+}
+
+h1,
+h2,
+h3,
+.logo-kickora,
+.logo-footer {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* NAVBAR KICKORA */
+
+.navbar-kickora {
+  width: 100%;
+  background-color: var(--color-tarjeta);
+  border-bottom: 1px solid var(--color-borde);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-kickora,
+.logo-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-negro);
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.marca-logo {
+  width: 34px;
+  height: 34px;
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radio-chico);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  transform: skew(-8deg);
+}
+
+.menu-kickora {
+  gap: 10px;
+}
+
+.menu-kickora .nav-link {
+  color: var(--color-negro);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: var(--radio-redondo);
+  transition: all 0.2s ease;
+}
+
+.menu-kickora .nav-link:hover,
+.menu-kickora .nav-link.active {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+}
+
+.acciones-kickora .boton-icono {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--color-borde);
+  border-radius: 50%;
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.acciones-kickora .boton-icono:hover {
+  background-color: var(--color-negro);
+  color: var(--color-verde-lima);
+  border-color: var(--color-negro);
+}
+
+.boton-principal-kickora {
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+  border: none;
+  border-radius: var(--radio-redondo);
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.boton-principal-kickora:hover {
+  background-color: var(--color-verde-lima-hover);
+  color: var(--color-negro);
+  transform: translateY(-1px);
+}
+
+.boton-menu-kickora {
+  border: 1px solid var(--color-borde);
+  background-color: var(--color-blanco);
+}
+
+.boton-menu-kickora:focus {
+  box-shadow: none;
+}
+
+/* BREADCRUMB KICKORA */
+
+.breadcrumb-kickora {
+  background-color: var(--color-fondo);
+  padding: 18px 0 8px;
+}
+
+.breadcrumb-kickora .breadcrumb {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.breadcrumb-kickora .breadcrumb-item a {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+}
+
+.breadcrumb-kickora .breadcrumb-item a:hover {
+  color: var(--color-negro);
+}
+
+.breadcrumb-kickora .breadcrumb-item.active {
+  color: var(--color-negro);
+  font-weight: 700;
+}
+
+.breadcrumb-kickora .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--color-texto-secundario);
+}
+
+/* css-error-404 */
+.error-body{
+  min-height: 100vh;
+overflow: hidden;
+
+}
+.error-section{
+ min-height:100vh;
+      
+      overflow:hidden;
+      padding:40px 20px 120px;
+}
+ 
+.title-404{
+  font-size:clamp(6rem, 18vw, 12rem);
+      font-weight:900;
+      line-height:1;
+      color:#000;
+      margin-bottom:10px;
+}
+.subtitle{
+  font-size:clamp(1.5rem, 4vw, 2.5rem);
+      font-weight:700;
+      color:#111;
+}
+
+.description{
+  font-size:clamp(1rem, 2vw, 1.4rem);
+      color:#666;
+      line-height:1.5;
+}
+.btn-home{
+    position:absolute;
+      bottom:65px;
+      left:50%;
+      transform:translateX(-50%);
+      background:#d8ff2f;
+      border:none;
+      border-radius:14px;
+      padding:16px 40px;
+      font-weight:800;
+      font-size:1rem;
+      color:#111;
+      transition:.3s;
+      z-index:3;
+}
+.btn-home:hover{
+ background:#c5eb28;
+      transform:translateX(-50%) scale(1.03);
+}
+.contenedor-zapatilla{
+  position:absolute;
+      bottom:90px;
+      left:50%;
+      transform:translateX(-50%) ;
+      width:min(90vw, 700px);
+      z-index:2;
+}
+.contenedor-zapatilla img{
+   width:100%;
+      object-fit:contain;
+      filter:drop-shadow(0 20px 30px rgba(0,0,0,.35));
+}
+/* Mobile */
+    @media (max-width:768px){
+
+      .contenedor-zapatilla{
+        
+        bottom:130px;
+        margin-top:40px;
+      }
+
+      .btn-home{
+        width:85%;
+      }
+
+    }
+
+/* FOOTER KICKORA */
+
+.footer-kickora {
+  background: linear-gradient(135deg, var(--color-negro), var(--color-oscuro));
+  color: var(--color-blanco);
+  padding: 56px 0 22px;
+  margin-top: 60px;
+}
+
+.footer-kickora .logo-footer {
+  color: var(--color-blanco);
+}
+
+.footer-kickora .marca-logo {
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+}
+
+.texto-footer {
+  color: var(--color-texto-claro);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+.titulo-footer {
+  color: var(--color-blanco);
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.links-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-footer li {
+  margin-bottom: 9px;
+}
+
+.links-footer a {
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.links-footer a:hover {
+  color: var(--color-verde-lima);
+  padding-left: 4px;
+}
+
+.redes-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.redes-footer a {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  color: var(--color-blanco);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.redes-footer a:hover {
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+  border-color: var(--color-verde-lima);
+}
+
+.formulario-footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radio-redondo);
+  padding: 5px;
+  max-width: 340px;
+}
+
+.formulario-footer input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-blanco);
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.formulario-footer input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.formulario-footer button {
+  border: none;
+  background-color: var(--color-verde-lima);
+  color: var(--color-negro);
+  border-radius: var(--radio-redondo);
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.formulario-footer button:hover {
+  background-color: var(--color-verde-lima-hover);
+}
+
+.medios-pago span {
+  display: block;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 8px;
+}
+
+.iconos-pago {
+  display: flex;
+  gap: 8px;
+}
+
+.iconos-pago i {
+  width: 38px;
+  height: 28px;
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-inferior {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 42px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-inferior p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+}
+
+.footer-inferior a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: 14px;
+}
+
+.footer-inferior a:hover {
+  color: var(--color-verde-lima);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .navbar-kickora .navbar-collapse {
+    background-color: var(--color-tarjeta);
+    margin-top: 14px;
+    padding: 18px;
+    border-radius: var(--radio-medio);
+    border: 1px solid var(--color-borde);
+    box-shadow: var(--sombra-suave);
+  }
+
+  .menu-kickora {
+    gap: 4px;
+  }
+
+  .acciones-kickora {
+    margin-top: 12px;
+  }
+
+  .boton-principal-kickora {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-kickora,
+  .logo-footer {
+    font-size: 26px;
+  }
+
+  .marca-logo {
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+  }
+
+  .formulario-footer {
+    flex-direction: column;
+    border-radius: var(--radio-medio);
+  }
+
+  .formulario-footer button {
+    width: 100%;
+  }
+
+  .footer-inferior {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-inferior a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+}
