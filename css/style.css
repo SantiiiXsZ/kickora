@@ -573,3 +573,8 @@ h3,
   object-fit: cover;
   object-position: center;
 }
+@media screen and (max-width: 912px) {
+  #promoCarousel .carousel-item img {
+    height: 120px; /* más bajo para pantallas pequeñas */
+  }
+}
