@@ -560,3 +560,9 @@ h3,
 .card-footer{
   background:var(--color-exito);
 }
+
+.banner-kickora {
+  width: 100%;
+  height: 325px;
+  object-fit: contain;
+}
