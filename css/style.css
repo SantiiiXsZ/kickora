@@ -575,6 +575,6 @@ h3,
 }
 @media screen and (max-width: 912px) {
   #promoCarousel .carousel-item img {
-    height: 120px; /* más bajo para pantallas pequeñas */
+    height: 120px; 
   }
 }
