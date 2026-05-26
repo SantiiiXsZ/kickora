@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="E-commerce de zapatillas en Argentina" />
     <meta name="author" content="RollingCode" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Kickora | Tienda de Zapatillas</title>
+
+    <!-- CSS FAQ -->
+    <link rel="stylesheet" href="../css/preguntas-frecuentes.css" />
+
+    <title>Kickora | Preguntas Frecuentes</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-kickora">
@@ -74,6 +82,7 @@
           </div>
         </div>
       </nav>
+
       <section class="breadcrumb-kickora">
         <div class="container">
           <nav aria-label="breadcrumb">
@@ -81,6 +90,7 @@
               <li class="breadcrumb-item">
                 <a href="../index.html">Inicio</a>
               </li>
+
               <li class="breadcrumb-item active" aria-current="page">
                 Preguntas Frecuentes
               </li>
@@ -89,112 +99,234 @@
         </div>
       </section>
     </header>
-    <main></main>
-        <footer class="footer-kickora">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-12 col-md-6 col-lg-3">
-            <a href="../index.html" class="logo-footer">
-              <span class="marca-logo">K</span>
-              KICKORA
-            </a>
 
-            <p class="texto-footer mt-3">
-              Zapatillas Premium para personas que marcan su propia ruta.
-            </p>
+    <!-- FAQ -->
+    <main>
+      <section class="faq-section container py-5">
 
-            <div class="redes-footer">
-              <a href="#" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
+        <div class="text-center mb-5">
 
-              <a href="#" aria-label="TikTok">
-                <i class="bi bi-tiktok"></i>
-              </a>
+          <span class="faq-etiqueta">
+            Centro de ayuda
+          </span>
 
-              <a href="#" aria-label="Facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
+          <h1 class="faq-title">
+            Preguntas Frecuentes
+          </h1>
 
-              <a href="#" aria-label="WhatsApp">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </div>
-          </div>
+          <p class="faq-subtitle">
+            Respondemos las dudas más comunes sobre compras, envíos, pagos y cambios.
+          </p>
 
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="titulo-footer">Navegación</h5>
-
-            <ul class="links-footer">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./categorias.html">Colección</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-              <li><a href="./nosotros.html">Nosotros</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="titulo-footer">Categorías</h5>
-
-            <ul class="links-footer">
-              <li><a href="./categorias.html">Running</a></li>
-              <li><a href="./categorias.html">Lifestyle</a></li>
-              <li><a href="./categorias.html">Training</a></li>
-              <li><a href="./categorias.html">Urbanas</a></li>
-              <li><a href="./categorias.html">Ofertas</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="titulo-footer">Ayuda</h5>
-
-            <ul class="links-footer">
-              <li>
-                <a href="./preguntas-frecuentes.html"
-                  >Preguntas frecuentes</a
-                >
-              </li>
-              <li><a href="./talles.html">Guía de talles</a></li>
-              <li><a href="#">Envíos y entregas</a></li>
-              <li><a href="#">Cambios y devoluciones</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
-            </ul>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <h5 class="titulo-footer">Newsletter</h5>
-
-            <p class="texto-footer">
-              Recibí novedades, lanzamientos y promociones exclusivas.
-            </p>
-
-            <form class="formulario-footer">
-              <input type="email" placeholder="Tu email" />
-              <button type="submit">Suscribirme</button>
-            </form>
-
-            <div class="medios-pago mt-3">
-              <span>Medios de pago</span>
-
-              <div class="iconos-pago">
-                <i class="bi bi-credit-card"></i>
-                <i class="bi bi-wallet2"></i>
-                <i class="bi bi-cash-stack"></i>
-              </div>
-            </div>
-          </div>
         </div>
 
+        <div class="accordion faq-accordion" id="faqAccordion">
+
+          <!-- 1 -->
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1">
+
+                ¿Cuánto tarda en llegar mi pedido?
+
+              </button>
+
+            </h2>
+
+            <div
+              id="faq1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body">
+
+                El pedido suele demorar entre 3 y 7 días hábiles, dependiendo de tu ubicación y del método de envío seleccionado.
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 2 -->
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2">
+
+                ¿Hacen envíos a todo el país?
+
+              </button>
+
+            </h2>
+
+            <div
+              id="faq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body">
+
+                Sí, realizamos envíos a todo el país mediante correo y servicios de logística asociados.
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 3 -->
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3">
+
+                ¿Cuáles son los medios de pago?
+
+              </button>
+
+            </h2>
+
+            <div
+              id="faq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body">
+
+                Aceptamos tarjetas de crédito, débito, transferencias bancarias y billeteras virtuales como Mercado Pago.
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 4 -->
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4">
+
+                ¿Puedo cambiar o devolver el producto?
+
+              </button>
+
+            </h2>
+
+            <div
+              id="faq4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body">
+
+                Sí, podés solicitar cambios o devoluciones dentro de los 10 días posteriores a recibir el producto, siempre que esté sin uso y en buen estado.
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 5 -->
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5">
+
+                ¿Cómo sé qué talle elegir?
+
+              </button>
+
+            </h2>
+
+            <div
+              id="faq5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body">
+
+                En cada producto podés consultar la guía de talles. Te recomendamos medir una plantilla o zapatilla que ya uses y comparar las medidas.
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 6 -->
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq6">
+
+                ¿Los productos tienen garantía?
+
+              </button>
+
+            </h2>
+
+            <div
+              id="faq6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body">
+
+                Sí, todos nuestros productos cuentan con garantía por fallas de fabricación. La garantía no cubre desgaste por uso normal o mal uso del producto.
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer-kickora">
+      <div class="container">
         <div class="footer-inferior">
           <p>© 2026 KICKORA. Todos los derechos reservados.</p>
-
-          <div>
-            <a href="#">Política de privacidad</a>
-            <a href="#">Términos</a>
-          </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
