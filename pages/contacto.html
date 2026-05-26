@@ -1,204 +1,196 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="E-commerce de zapatillas en Argentina" />
-    <meta name="author" content="RollingCode" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Kickora | Tienda de Zapatillas</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-kickora">
-        <div class="container">
-          <a class="navbar-brand logo-kickora" href="../index.html">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="E-commerce de zapatillas en Argentina" />
+  <meta name="author" content="RollingCode" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Kickora | Tienda de Zapatillas</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-kickora">
+      <div class="container">
+        <a class="navbar-brand logo-kickora" href="../index.html">
+          <span class="marca-logo">K</span>
+          KICKORA
+        </a>
+
+        <button class="navbar-toggler boton-menu-kickora" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuKickora" aria-controls="menuKickora" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuKickora">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu-kickora">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./categorias.html">Catálogo</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./talles.html">Guía de talles</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 acciones-kickora">
+            <a href="#" class="boton-icono" aria-label="Buscar">
+              <i class="bi bi-search"></i>
+            </a>
+
+            <a href="./categorias.html" class="btn boton-principal-kickora">
+              Ver colección
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="breadcrumb-kickora">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Contacto
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="mb4">
+      <!-- h1 con tamaño de encabezado 2 (fs-2), texto negro/oscuro (text-dark) y sin márgenes (m-0) -->
+      <h1 class="fw-bold m-0 fs-2 text-dark">Contacto</h1>
+      <!-- Parrafo con texto gris (text-muted), tamaño de letra chico (small) y margen superior leve (mt-1) -->
+      <p>Estamos para ayudarte</p>
+    </div>
+  </main>
+  <footer class="footer-kickora">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="../index.html" class="logo-footer">
             <span class="marca-logo">K</span>
             KICKORA
           </a>
 
-          <button
-            class="navbar-toggler boton-menu-kickora"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuKickora"
-            aria-controls="menuKickora"
-            aria-expanded="false"
-            aria-label="Abrir menú"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <p class="texto-footer mt-3">
+            Zapatillas Premium para personas que marcan su propia ruta.
+          </p>
 
-          <div class="collapse navbar-collapse" id="menuKickora">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu-kickora">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="./categorias.html">Catálogo</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="./talles.html">Guía de talles</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
-
-            <div class="d-flex align-items-center gap-2 acciones-kickora">
-              <a href="#" class="boton-icono" aria-label="Buscar">
-                <i class="bi bi-search"></i>
-              </a>
-
-              <a href="./categorias.html" class="btn boton-principal-kickora">
-                Ver colección
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <section class="breadcrumb-kickora">
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item">
-                <a href="../index.html">Inicio</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Contacto
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
-    </header>
-    <main></main>
-        <footer class="footer-kickora">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-12 col-md-6 col-lg-3">
-            <a href="../index.html" class="logo-footer">
-              <span class="marca-logo">K</span>
-              KICKORA
+          <div class="redes-footer">
+            <a href="#" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
             </a>
 
-            <p class="texto-footer mt-3">
-              Zapatillas Premium para personas que marcan su propia ruta.
-            </p>
+            <a href="#" aria-label="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
 
-            <div class="redes-footer">
-              <a href="#" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
+            <a href="#" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
 
-              <a href="#" aria-label="TikTok">
-                <i class="bi bi-tiktok"></i>
-              </a>
-
-              <a href="#" aria-label="Facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
-
-              <a href="#" aria-label="WhatsApp">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="titulo-footer">Navegación</h5>
-
-            <ul class="links-footer">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./categorias.html">Colección</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-              <li><a href="./nosotros.html">Nosotros</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="titulo-footer">Categorías</h5>
-
-            <ul class="links-footer">
-              <li><a href="./categorias.html">Running</a></li>
-              <li><a href="./categorias.html">Lifestyle</a></li>
-              <li><a href="./categorias.html">Training</a></li>
-              <li><a href="./categorias.html">Urbanas</a></li>
-              <li><a href="./categorias.html">Ofertas</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="titulo-footer">Ayuda</h5>
-
-            <ul class="links-footer">
-              <li>
-                <a href="./preguntas-frecuentes.html"
-                  >Preguntas frecuentes</a
-                >
-              </li>
-              <li><a href="./talles.html">Guía de talles</a></li>
-              <li><a href="#">Envíos y entregas</a></li>
-              <li><a href="#">Cambios y devoluciones</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
-            </ul>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <h5 class="titulo-footer">Newsletter</h5>
-
-            <p class="texto-footer">
-              Recibí novedades, lanzamientos y promociones exclusivas.
-            </p>
-
-            <form class="formulario-footer">
-              <input type="email" placeholder="Tu email" />
-              <button type="submit">Suscribirme</button>
-            </form>
-
-            <div class="medios-pago mt-3">
-              <span>Medios de pago</span>
-
-              <div class="iconos-pago">
-                <i class="bi bi-credit-card"></i>
-                <i class="bi bi-wallet2"></i>
-                <i class="bi bi-cash-stack"></i>
-              </div>
-            </div>
+            <a href="#" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
           </div>
         </div>
 
-        <div class="footer-inferior">
-          <p>© 2026 KICKORA. Todos los derechos reservados.</p>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="titulo-footer">Navegación</h5>
 
-          <div>
-            <a href="#">Política de privacidad</a>
-            <a href="#">Términos</a>
+          <ul class="links-footer">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./categorias.html">Colección</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="titulo-footer">Categorías</h5>
+
+          <ul class="links-footer">
+            <li><a href="./categorias.html">Running</a></li>
+            <li><a href="./categorias.html">Lifestyle</a></li>
+            <li><a href="./categorias.html">Training</a></li>
+            <li><a href="./categorias.html">Urbanas</a></li>
+            <li><a href="./categorias.html">Ofertas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="titulo-footer">Ayuda</h5>
+
+          <ul class="links-footer">
+            <li>
+              <a href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
+            </li>
+            <li><a href="./talles.html">Guía de talles</a></li>
+            <li><a href="#">Envíos y entregas</a></li>
+            <li><a href="#">Cambios y devoluciones</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="titulo-footer">Newsletter</h5>
+
+          <p class="texto-footer">
+            Recibí novedades, lanzamientos y promociones exclusivas.
+          </p>
+
+          <form class="formulario-footer">
+            <input type="email" placeholder="Tu email" />
+            <button type="submit">Suscribirme</button>
+          </form>
+
+          <div class="medios-pago mt-3">
+            <span>Medios de pago</span>
+
+            <div class="iconos-pago">
+              <i class="bi bi-credit-card"></i>
+              <i class="bi bi-wallet2"></i>
+              <i class="bi bi-cash-stack"></i>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+      <div class="footer-inferior">
+        <p>© 2026 KICKORA. Todos los derechos reservados.</p>
+
+        <div>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
