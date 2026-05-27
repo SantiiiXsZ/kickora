@@ -603,3 +603,69 @@ h3,
     height: 120px; 
   }
 }
+
+/* contacto */
+
+.contacto-formulario {
+  width: 100%;
+}
+
+.contacto-formulario h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #07111f;
+  margin-bottom: 28px;
+}
+
+.contacto-formulario .form-control {
+  background-color: #f6f7f8;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 0.95rem;
+}
+
+.contacto-formulario .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(190, 240, 40, 0.35);
+}
+
+.btn-enviar {
+  background-color: #c8f236;
+  border: none;
+  color: #07111f;
+  padding: 15px 32px;
+  border-radius: 8px;
+  font-weight: 900;
+  transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #b7e82b;
+  transform: translateY(-2px);
+}
+
+.mapa-contacto {
+  width: 100%;
+  min-height: 430px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.mapa-contacto iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .mapa-contacto {
+    min-height: 300px;
+  }
+
+  .mapa-contacto iframe {
+    min-height: 300px;
+  }
+}
