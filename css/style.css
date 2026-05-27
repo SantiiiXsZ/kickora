@@ -604,6 +604,180 @@ h3,
   }
 }
 
+/* NOSOTROS HTML */
+
+.seccion-nosotros {
+  background: #f4f4f1;
+  padding: 80px 20px;
+}
+
+.contenedor-nosotros {
+  max-width: 1180px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.imagen-nosotros {
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+}
+
+.imagen-nosotros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contenido-nosotros {
+  padding: 42px;
+}
+
+.etiqueta-nosotros {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777777;
+}
+
+.contenido-nosotros h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 900;
+  line-height: 0.95;
+  color: #111111;
+  margin-bottom: 22px;
+}
+
+.contenido-nosotros p {
+  max-width: 720px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.contenido-nosotros p strong {
+  color: #111111;
+}
+
+.estadisticas-nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 38px 0 45px;
+}
+
+.estadisticas-nosotros div {
+  border-top: 1px solid #dddddd;
+  padding-top: 18px;
+}
+
+.estadisticas-nosotros h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.estadisticas-nosotros span {
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.equipo-nosotros h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+  color: #111111;
+}
+
+.lista-equipo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.miembro-equipo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f7f7f5;
+  padding: 12px;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.miembro-equipo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.miembro-equipo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #dddddd;
+}
+
+.miembro-equipo strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #111111;
+}
+
+.miembro-equipo span {
+  font-size: 0.78rem;
+  color: #666666;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .imagen-nosotros {
+    height: 340px;
+  }
+
+  .lista-equipo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .seccion-nosotros {
+    padding: 50px 14px;
+  }
+
+  .contenedor-nosotros {
+    border-radius: 22px;
+  }
+
+  .imagen-nosotros {
+    height: 250px;
+  }
+
+  .contenido-nosotros {
+    padding: 28px 22px;
+  }
+
+  .estadisticas-nosotros {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .lista-equipo {
+    grid-template-columns: 1fr;
+  }
+
+  .miembro-equipo {
+    padding: 14px;
 /* contacto */
 
 .contacto-formulario {
