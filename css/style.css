@@ -494,14 +494,18 @@ h3,
 }
 
 /* CAROUSEL/BANNER INICIO */
-.carousel,
-.carousel-inner,
-.carousel-item {
+#carouselExampleIndicators,
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-item {
   width: 100%;
   height: 620px;
 }
 
-.banner {
+#carouselExampleIndicators .carousel-item {
+  position: relative;
+}
+
+#carouselExampleIndicators .banner {
   width: 100%;
   height: 100%;
   display: block;
@@ -516,36 +520,28 @@ h3,
   }
 }
 
-@media (max-width: 768px) {
-  .carousel,
-  .carousel-inner,
-  .carousel-item {
-    height: 360px;
-  }
+/* BOTONES DEL BANNER */
+.botones-carousel {
+  position: absolute;
+  left: 7%;
+  bottom: 120px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-@media (max-width: 576px) {
-  .carousel,
-  .carousel-inner,
-  .carousel-item {
-    height: 260px;
-  }
-}
-
-/* BOTONES DE VENTA Y VER COLECCION  */
-.carousel-caption {
-  left: 10%;
-  right: auto;
-  bottom: 30%;
-  text-align: left;
+.botones-carousel .btn {
+  border-radius: 6px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .btn-venta {
   background: var(--color-negro);
   color: var(--color-blanco);
   border: 1px solid var(--color-negro);
-  border-radius: 6px;
-  padding: 8px 14px;
   transition: 0.3s;
 }
 
@@ -558,14 +554,78 @@ h3,
 .btn-outline-light {
   border: 1px solid var(--color-blanco);
   color: var(--color-blanco);
-  border-radius: 6px;
-  padding: 8px 16px;
   transition: 0.3s;
 }
 
 .btn-outline-light:hover {
   background: var(--color-blanco);
   color: var(--color-negro);
+}
+
+/* INDICADORES DEL CARRUSEL */
+#carouselExampleIndicators .carousel-indicators {
+  bottom: 18px;
+  z-index: 25;
+}
+
+#carouselExampleIndicators .carousel-indicators button {
+  width: 42px;
+  height: 4px;
+  border-radius: 20px;
+}
+
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators .carousel-control-next {
+  z-index: 25;
+}
+
+/* RESPONSIVE CARRUSEL */
+@media (max-width: 992px) {
+  #carouselExampleIndicators,
+  #carouselExampleIndicators .carousel-inner,
+  #carouselExampleIndicators .carousel-item {
+    height: 480px;
+  }
+
+  .botones-carousel {
+    bottom: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  #carouselExampleIndicators,
+  #carouselExampleIndicators .carousel-inner,
+  #carouselExampleIndicators .carousel-item {
+    height: 360px;
+  }
+
+  .botones-carousel {
+    left: 24px;
+    bottom: 55px;
+  }
+
+  .botones-carousel .btn {
+    padding: 8px 13px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators,
+  #carouselExampleIndicators .carousel-inner,
+  #carouselExampleIndicators .carousel-item {
+    height: 260px;
+  }
+
+  .botones-carousel {
+    bottom: 38px;
+    gap: 8px;
+  }
+
+  .botones-carousel .btn {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
 }
 /*DEFINICION DE LAS IMAGENES DE LAS CARDS*/
 .img-categoria {
