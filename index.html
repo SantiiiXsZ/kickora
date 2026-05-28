@@ -84,8 +84,10 @@
       <!--CAROUSEL -->
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        class="carousel slide carousel-kickora"
         data-bs-ride="carousel"
+        data-bs-interval="3000"
+        data-bs-pause="false"
       >
         <div class="carousel-indicators">
           <button
@@ -96,12 +98,14 @@
             aria-current="true"
             aria-label="Slide 1"
           ></button>
+
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
+
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -109,39 +113,76 @@
             aria-label="Slide 3"
           ></button>
         </div>
+
         <!-- CAROUSEL BANNERS -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./img/KICK1.png"
-              class="d-block flyer banner"
+              src="./img/KICK-BANNER-1.png"
+              class="d-block w-100 flyer banner"
               alt="kick1flyer1"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <button class="btn btn-outline-light me-3 btn-sm">
+
+            <div class="botones-carousel">
+              <a
+                href="./pages/categorias.html"
+                class="btn btn-outline-light btn-sm"
+              >
                 Ver colección
-              </button>
-              <button class="btn btn-venta btn-sm">
+              </a>
+
+              <a href="./pages/categorias.html" class="btn btn-venta btn-sm">
                 <i class="bi bi-bag-fill"></i>
                 Comprar Ahora
-              </button>
+              </a>
             </div>
           </div>
+
           <div class="carousel-item">
             <img
-              src="./img/KICK2.png"
-              class="d-block flyer banner"
+              src="./img/KICK-BANNER-2.png"
+              class="d-block w-100 flyer banner"
               alt="kickflayer2"
             />
+
+            <div class="botones-carousel">
+              <a
+                href="./pages/categorias.html"
+                class="btn btn-outline-light btn-sm"
+              >
+                Ver colección
+              </a>
+
+              <a href="./pages/categorias.html" class="btn btn-venta btn-sm">
+                <i class="bi bi-bag-fill"></i>
+                Comprar Ahora
+              </a>
+            </div>
           </div>
+
           <div class="carousel-item">
             <img
-              src="./img/KICK3 (2).png"
-              class="d-block flyer banner"
+              src="./img/KICK-BANNER-3.png"
+              class="d-block w-100 flyer banner"
               alt="kickflyer3"
             />
+
+            <div class="botones-carousel">
+              <a
+                href="./pages/categorias.html"
+                class="btn btn-outline-light btn-sm"
+              >
+                Ver colección
+              </a>
+
+              <a href="./pages/categorias.html" class="btn btn-venta btn-sm">
+                <i class="bi bi-bag-fill"></i>
+                Comprar Ahora
+              </a>
+            </div>
           </div>
         </div>
+
         <!-- botones de direccionamientos del carousel -->
         <button
           class="carousel-control-prev"
@@ -150,8 +191,9 @@
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
+
         <button
           class="carousel-control-next"
           type="button"
@@ -159,7 +201,7 @@
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
       <!-- SECTOR DE BENEFICIOS -->
@@ -223,9 +265,11 @@
                 alt="Hombre"
               />
               <div class="card-body text-center">
-                <button type="button" class="btn btn-outline-secondary">
-                  Hombre
-                </button>
+                <a
+                  href="./pages/categorias.html"
+                  class="btn btn-outline-secondary"
+                  >Hombre</a
+                >
               </div>
             </div>
           </div>
@@ -538,9 +582,9 @@
                 >
               </li>
               <li><a href="./pages/talles.html">Guía de talles</a></li>
-              <li><a href="#">Envíos y entregas</a></li>
-              <li><a href="#">Cambios y devoluciones</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="./pages/error404.html">Envíos y entregas</a></li>
+              <li><a href="./pages/error404.html">Cambios y devoluciones</a></li>
+              <li><a href="./pages/error404.html">Términos y condiciones</a></li>
             </ul>
           </div>
 
@@ -572,8 +616,8 @@
           <p>© 2026 KICKORA. Todos los derechos reservados.</p>
 
           <div>
-            <a href="#">Política de privacidad</a>
-            <a href="#">Términos</a>
+            <a href="./pages/error404.html">Política de privacidad</a>
+            <a href="./pages/error404.html">Términos</a>
           </div>
         </div>
       </div>
