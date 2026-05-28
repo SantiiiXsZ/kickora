@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="E-commerce de zapatillas en Argentina" />
+    <meta name="author" content="RollingCode" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon.png"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Kickora | Categoría Hombre</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-kickora">
+        <div class="container">
+          <a class="navbar-brand logo-kickora" href="../index.html">
+            <span class="marca-logo">K</span>
+            KICKORA
+          </a>
+
+          <button
+            class="navbar-toggler boton-menu-kickora"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuKickora"
+            aria-controls="menuKickora"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuKickora">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu-kickora">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="./categorias.html">Catálogo</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./talles.html">Guía de talles</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-2 acciones-kickora">
+              <form
+                class="d-flex align-items-center gap-2"
+                role="search"
+                action="./categorias.html"
+                method="GET"
+              >
+                <input
+                  class="form-control rounded-pill buscador-input"
+                  type="search"
+                  name="buscar"
+                  placeholder="Buscar productos..."
+                  aria-label="Buscar"
+                />
+
+                <button
+                  class="btn btn-buscar-navbar rounded-circle"
+                  type="submit"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <a
+                href="./detalle-carrito.html"
+                class="btn-carrito-navbar"
+                aria-label="Ir al carrito"
+              >
+                <i class="bi bi-cart3"></i>
+              </a>
+
+              <a
+                href="./login.html"
+                class="btn boton-principal-kickora"
+              >
+                Iniciar Sesión
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="breadcrumb-kickora">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Colección
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main class="py-5">
+  <div class="container">
+
+    <div class="row">
+
+      <aside class="col-12 col-md-3">
+
+        <button 
+  class="btn btn-outline-dark w-100 d-md-none mb-3"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#filtroCategorias"
+>
+  Filtros
+</button>
+
+<div class="collapse d-md-block" id="filtroCategorias">
+
+  <h5 class="mb-3 d-none d-md-block">Categorias</h5>
+
+  <ul class="list-unstyled">
+    <li><input type="checkbox"> Running</li>
+    <li><input type="checkbox"> Lifestyle</li>
+    <li><input type="checkbox"> Skate</li>
+    <li><input type="checkbox"> Training</li>
+    <li><input type="checkbox"> Outdoor</li>
+  </ul>
+
+        <hr>
+
+        <h5 class="mb-3">Talle</h5>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge bg-light text-dark border">38</span>
+          <span class="badge bg-light text-dark border">39</span>
+          <span class="badge bg-light text-dark border">40</span>
+          <span class="badge bg-light text-dark border">41</span>
+          <span class="badge bg-light text-dark border">42</span>
+          <span class="badge bg-light text-dark border">43</span>
+        </div>
+
+        <hr>
+
+        <h5 class="mb-3">Colores</h5>
+        <div class="d-flex gap-2">
+          <div style="width:20px;height:20px;background:black;border-radius:50%"></div>
+          <div style="width:20px;height:20px;background:white;border:1px solid #ccc;border-radius:50%"></div>
+          <div style="width:20px;height:20px;background:gray;border-radius:50%"></div>
+          <div style="width:20px;height:20px;background:#C1D055;border-radius:50%"></div>
+          <div style="width:20px;height:20px;background:#503F33;border-radius:50%"></div>
+          <div style="width:20px;height:20px;background:#D5C7B7;border-radius:50%"></div>
+        </div>
+
+        <hr>
+
+<h5 class="mb-3">Precio</h5>
+
+<div class="px-2">
+  <input type="range" class="form-range" min="50000" max="200000">
+
+  <div class="d-flex justify-content-between">
+    <small>$50.000</small>
+    <small>$200.000</small>
+  </div>
+</div>
+
+<hr>
+
+<h5 class="mb-3">Disponibilidad</h5>
+
+<ul class="list-unstyled">
+  <li>
+    <input type="checkbox"> Todo
+  </li>
+
+  <li>
+    <input type="checkbox"> En stock
+  </li>
+
+  <li>
+    <input type="checkbox"> Sin stock
+  </li>
+</ul>
+</div>
+
+      </aside>
+
+      <section class="col-12 col-md-9">
+
+          <div class="d-flex justify-content-between align-items-start mb-3">
+
+  <div>
+    <h4 class="mb-0">Zapatillas Hombre</h4>
+    <small class="text-muted">(120 productos)</small>
+  </div>
+
+  <select class="form-select w-auto">
+    <option>Más vendidos</option>
+    <option>Menor precio</option>
+    <option>Mayor precio</option>
+  </select>
+
+</div>
+
+        <div class="row g-3">
+
+  <div class="col-12 col-sm-6 col-lg-4">
+
+    <a href="detalle-producto.html" class="text-decoration-none text-dark">
+
+      <div class="card p-2 position-relative">
+
+        <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+
+        <img src="/img/1.png" class="img-fluid" alt="zapatilla">
+
+        <div class="mt-2">
+          <small>Kickora Bolt 2.0</small>
+          <h6>$119.990</h6>
+
+          <div>
+            ⭐⭐⭐⭐⭐ (234)
+          </div>
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card p-2 position-relative">
+              <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+              <img src="/img/2.png" class="img-fluid" alt="">
+              <small>Kickora Neon Edge</small>
+              <h6>$65.999</h6>
+              <div>
+                ⭐⭐⭐⭐⭐ (156)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card p-2 position-relative">
+              <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+              <img src="/img/3.png" class="img-fluid" alt="">
+              <small>Kickora Shadow Run</small>
+              <h6>$73.999</h6>
+              <div>
+                ⭐⭐⭐⭐⭐ (98)
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card p-2 position-relative">
+              <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+              <img src="/img/4.png" class="img-fluid" alt="">
+              <small>Kickora Desert Flow</small>
+              <h6>$69.300</h6>
+              <div>
+                ⭐⭐⭐⭐⭐ (123)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card p-2 position-relative">
+              <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+              <img src="/img/5.png" class="img-fluid" alt="">
+              <small>Kickora Storm X</small>
+              <h6>$54.999</h6>
+              <div>
+                ⭐⭐⭐⭐⭐ (136)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card p-2 position-relative">
+              <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+              <img src="/img/6.png" class="img-fluid" alt="">
+              <small>Kickora Street Pulse</small>
+              <h6>$65.999</h6>
+              <div>
+                ⭐⭐⭐⭐⭐ (87)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card p-2 position-relative">
+              <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+              <img src="/img/7.png" class="img-fluid" alt="">
+              <small>Kickora AeroFlex</small>
+              <h6>$84.550</h6>
+              <div>
+                ⭐⭐⭐⭐⭐ (65)
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card p-2 position-relative">
+              <i class="bi bi-heart position-absolute top-0 end-0 m-2"></i>
+              <img src="/img/8.png" class="img-fluid" alt="">
+              <small>Kickora PrimeCore</small>
+              <h6>$99.999</h6>
+              <div>
+                ⭐⭐⭐⭐⭐ (43)
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-4 d-flex justify-content-center gap-2">
+          <button class="btn btn-light">‹</button>
+          <button class="btn btn-dark">1</button>
+          <a href="./categorias-2.html" class="btn btn-light">2</a>
+          <button class="btn btn-light">3</button>
+          <button class="btn btn-light">4</button>
+          <button class="btn btn-light">5</button>
+          <button class="btn btn-light">›</button>
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+</main>
+    <footer class="footer-kickora">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="../index.html" class="logo-footer">
+              <span class="marca-logo">K</span>
+              KICKORA
+            </a>
+
+            <p class="texto-footer mt-3">
+              Zapatillas Premium para personas que marcan su propia ruta.
+            </p>
+
+            <div class="redes-footer">
+              <a href="#" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a href="#" aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+              </a>
+
+              <a href="#" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="#" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2">
+            <h5 class="titulo-footer">Navegación</h5>
+
+            <ul class="links-footer">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./categorias.html">Colección</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
+              <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2">
+            <h5 class="titulo-footer">Categorías</h5>
+
+            <ul class="links-footer">
+              <li><a href="./categorias.html">Running</a></li>
+              <li><a href="./categorias.html">Lifestyle</a></li>
+              <li><a href="./categorias.html">Training</a></li>
+              <li><a href="./categorias.html">Urbanas</a></li>
+              <li><a href="./categorias.html">Ofertas</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2">
+            <h5 class="titulo-footer">Ayuda</h5>
+
+            <ul class="links-footer">
+              <li>
+                <a href="./preguntas-frecuentes.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li><a href="./talles.html">Guía de talles</a></li>
+              <li><a href="./error404.html">Envíos y entregas</a></li>
+              <li><a href="./error404.html">Cambios y devoluciones</a></li>
+              <li><a href="./error404.html">Términos y condiciones</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="titulo-footer">Newsletter</h5>
+
+            <p class="texto-footer">
+              Recibí novedades, lanzamientos y promociones exclusivas.
+            </p>
+
+            <form class="formulario-footer">
+              <input type="email" placeholder="Tu email" />
+              <button type="submit">Suscribirme</button>
+            </form>
+
+            <div class="medios-pago mt-3">
+              <span>Medios de pago</span>
+
+              <div class="iconos-pago">
+                <i class="bi bi-credit-card"></i>
+                <i class="bi bi-wallet2"></i>
+                <i class="bi bi-cash-stack"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-inferior">
+          <p>© 2026 KICKORA. Todos los derechos reservados.</p>
+
+          <div>
+            <a href="./error404.html">Política de privacidad</a>
+            <a href="./error404.html">Términos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
