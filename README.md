@@ -76,14 +76,15 @@ kickora/
 │   ├── logo.png
 │   └── banners/
 └── README.md
+```
 
-````markdown
 ## ➡️ Pasos para clonar el repo
 
 En una terminal ejecutá el siguiente comando:
 
 ```bash
 git clone https://github.com/SantiiiXsZ/kickora.git
+```
 
 ## 👥 Autores
 
