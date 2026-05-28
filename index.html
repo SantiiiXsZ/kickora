@@ -65,15 +65,30 @@
             </ul>
 
             <div class="d-flex align-items-center gap-2 acciones-kickora">
-              <a href="#" class="boton-icono" aria-label="Buscar">
-                <i class="bi bi-search"></i>
-              </a>
-
-              <a
-                href="./pages/categorias.html"
-                class="btn boton-principal-kickora"
+              <form
+                class="d-flex align-items-center gap-2"
+                role="search"
+                action="./pages/categorias.html"
+                method="GET"
               >
-                Ver colección
+                <input
+                  class="form-control rounded-pill buscador-input"
+                  type="search"
+                  name="buscar"
+                  placeholder="Buscar productos..."
+                  aria-label="Buscar"
+                />
+
+                <button
+                  class="btn btn-buscar-navbar rounded-circle"
+                  type="submit"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+
+              <a href="./pages/login.html" class="btn boton-principal-kickora">
+                Iniciar Sesión
               </a>
             </div>
           </div>
@@ -583,8 +598,12 @@
               </li>
               <li><a href="./pages/talles.html">Guía de talles</a></li>
               <li><a href="./pages/error404.html">Envíos y entregas</a></li>
-              <li><a href="./pages/error404.html">Cambios y devoluciones</a></li>
-              <li><a href="./pages/error404.html">Términos y condiciones</a></li>
+              <li>
+                <a href="./pages/error404.html">Cambios y devoluciones</a>
+              </li>
+              <li>
+                <a href="./pages/error404.html">Términos y condiciones</a>
+              </li>
             </ul>
           </div>
 

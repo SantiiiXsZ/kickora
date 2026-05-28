@@ -163,6 +163,32 @@ h3,
   box-shadow: none;
 }
 
+/* BUSCADOR NAVBAR */
+
+.buscador-input {
+  width: 190px;
+  height: 42px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.btn-buscar-navbar {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-buscar-navbar:hover {
+  background-color: #c6ff00;
+  border-color: #c6ff00;
+  color: #000;
+}
+
 /* BREADCRUMB KICKORA */
 
 .breadcrumb-kickora {
