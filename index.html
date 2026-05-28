@@ -80,7 +80,443 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!--CAROUSEL -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-kickora"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+        data-bs-pause="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- CAROUSEL BANNERS -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/KICK-BANNER-1.png"
+              class="d-block w-100 flyer banner"
+              alt="kick1flyer1"
+            />
+
+            <div class="botones-carousel">
+              <a
+                href="./pages/categorias.html"
+                class="btn btn-outline-light btn-sm"
+              >
+                Ver colección
+              </a>
+
+              <a href="./pages/categorias.html" class="btn btn-venta btn-sm">
+                <i class="bi bi-bag-fill"></i>
+                Comprar Ahora
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./img/KICK-BANNER-2.png"
+              class="d-block w-100 flyer banner"
+              alt="kickflayer2"
+            />
+
+            <div class="botones-carousel">
+              <a
+                href="./pages/categorias.html"
+                class="btn btn-outline-light btn-sm"
+              >
+                Ver colección
+              </a>
+
+              <a href="./pages/categorias.html" class="btn btn-venta btn-sm">
+                <i class="bi bi-bag-fill"></i>
+                Comprar Ahora
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./img/KICK-BANNER-3.png"
+              class="d-block w-100 flyer banner"
+              alt="kickflyer3"
+            />
+
+            <div class="botones-carousel">
+              <a
+                href="./pages/categorias.html"
+                class="btn btn-outline-light btn-sm"
+              >
+                Ver colección
+              </a>
+
+              <a href="./pages/categorias.html" class="btn btn-venta btn-sm">
+                <i class="bi bi-bag-fill"></i>
+                Comprar Ahora
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- botones de direccionamientos del carousel -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      <!-- SECTOR DE BENEFICIOS -->
+      <section class="d-none d-md-block py-4 bg-light">
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-4 g-0">
+            <!-- Envíos -->
+            <div class="col">
+              <div class="d-flex align-items-center p-3 border shadow-sm h-100">
+                <i class="bi bi-truck fs-2 me-3"></i>
+                <div>
+                  <h6 class="mb-1 fw-bold">Envíos gratis</h6>
+                  <small class="text-muted">En compras + a $65.999</small>
+                </div>
+              </div>
+            </div>
+            <!-- Cambios -->
+            <div class="col">
+              <div class="d-flex align-items-center p-3 border shadow-sm h-100">
+                <i class="bi bi-arrow-repeat fs-2 me-3"></i>
+                <div>
+                  <h6 class="mb-1 fw-bold">Cambios fáciles</h6>
+                  <small class="text-muted">Dentro de 20 dias</small>
+                </div>
+              </div>
+            </div>
+            <!-- Pagos -->
+            <div class="col">
+              <div class="d-flex align-items-center p-3 border shadow-sm h-100">
+                <i class="bi bi-lock fs-2 me-3"></i>
+                <div>
+                  <h6 class="mb-1 fw-bold">Pagos seguros</h6>
+                  <small class="text-muted">Todos los medios</small>
+                </div>
+              </div>
+            </div>
+            <!-- Calidad premium -->
+            <div class="col">
+              <div class="d-flex align-items-center p-3 border shadow-sm h-100">
+                <i class="bi bi-star fs-2 me-3"></i>
+                <div>
+                  <h6 class="mb-1 fw-bold">Calidad premium</h6>
+                  <small class="text-muted">Materiales selectos</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--CATEGORIAS DESTACADAS -->
+      <section class="container my-3">
+        <h2>Categorias destacadas</h2>
+        <div
+          class="row row-categorias justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-5 g-3"
+        >
+          <div class="col">
+            <div class="card">
+              <img
+                src="./img/hombre.jpg"
+                class="card-img-top img-categoria"
+                alt="Hombre"
+              />
+              <div class="card-body text-center">
+                <a
+                  href="./pages/categorias.html"
+                  class="btn btn-outline-secondary"
+                  >Hombre</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./img/mujer.jpg"
+                class="card-img-top img-categoria"
+                alt="Mujer"
+              />
+              <div class="card-body text-center">
+                <button type="button" class="btn btn-outline-secondary">
+                  Mujer
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./img/niño.jpg"
+                class="card-img-top img-categoria"
+                alt="Kids"
+              />
+              <div class="card-body text-center">
+                <button type="button" class="btn btn-outline-secondary">
+                  Kids
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./img/novedades.jpg"
+                class="card-img-top img-categoria"
+                alt="Novedades"
+              />
+              <div class="card-body text-center">
+                <button type="button" class="btn btn-outline-secondary">
+                  Novedades
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./img/accesorios.jpg"
+                class="card-img-top img-categoria"
+                alt="Accesorios"
+              />
+              <div class="card-body text-center">
+                <button type="button" class="btn btn-outline-secondary">
+                  Accesorios
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--BANNER PROMOCIONAL -->
+      <section class="container-fluid position-relative d-none d-md-block">
+        <img
+          src="./img/bannermedio.png"
+          alt="Bannerpublicitario"
+          class="banner-kickora"
+        />
+      </section>
+      <!--CATEGORIAS DE PRODUCTOS -->
+      <section class="container my-3">
+        <h2>Productos Destacados</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4 mt-2 text-center">
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img src="./img/1.png" class="card-img-top" alt="producto1" />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora Bolt 2.0</h5>
+                <p class="card-text">$119.990</p>
+              </div>
+              <div class="card-footer">
+                <a
+                  href="pages/detalle-producto.html"
+                  class="text-decoration-none text-dark"
+                >
+                  Ver producto <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img src="./img/2.png" class="card-img-top" alt="producto2" />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora Neon Edge</h5>
+                <p class="card-text">$65.999</p>
+              </div>
+              <div class="card-footer">
+                <span>Ver producto <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img src="./img/3.png" class="card-img-top" alt="producto3" />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora Shadow Run</h5>
+                <span class="card-text">$73.999</span>
+              </div>
+              <div class="card-footer">
+                <span>Ver producto <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img src="./img/4.png" class="card-img-top" alt="producto4" />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora Desert Flow</h5>
+                <p class="card-text">$69.300</p>
+              </div>
+              <div class="card-footer">
+                <span>Ver producto <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img src="./img/5.png" class="card-img-top" alt="producto5" />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora Storm X</h5>
+                <p class="card-text">$54.999</p>
+              </div>
+              <div class="card-footer">
+                <span>Ver producto <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img src="./img/6.png" class="card-img-top" alt="producto6" />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora Street Pulse</h5>
+                <p class="card-text">$65.999</p>
+              </div>
+              <div class="card-footer">
+                <span>Ver producto <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img src="./img/7.png" class="card-img-top" alt="producto7" />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora AeroFlex</h5>
+                <p class="card-text">$84.550</p>
+              </div>
+              <div class="card-footer">
+                <span>Ver producto <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 position-relative">
+              <img
+                src="./img/8.png"
+                class="card-img-top"
+                alt="producto8
+              "
+              />
+              <a href="#" class="position-absolute top-0 end-0 m-2 text-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Kickora PrimeCore</h5>
+                <p class="card-text">$99.999</p>
+              </div>
+              <div class="card-footer">
+                <span>Ver producto <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <button type="button" class="btn btn-outline-dark display-3">
+            VER +
+          </button>
+        </div>
+      </section>
+      <!--CAROUSEL FIN PROMO -->
+      <section>
+        <div
+          id="promoCarousel"
+          class="carousel slide h-25"
+          data-bs-ride="carousel"
+          data-bs-interval="2000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/promocamperas.png"
+                class="d-block w-100"
+                alt="camperapromo"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/termicaspromo.png"
+                class="d-block w-100"
+                alt="termicaspromo"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/promomedias.png"
+                class="d-block w-100"
+                alt="mediaspromo"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/off.png" class="d-block w-100" alt="offpromo" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer-kickora">
       <div class="container">
         <div class="row gy-4">
@@ -146,9 +582,9 @@
                 >
               </li>
               <li><a href="./pages/talles.html">Guía de talles</a></li>
-              <li><a href="#">Envíos y entregas</a></li>
-              <li><a href="#">Cambios y devoluciones</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="./pages/error404.html">Envíos y entregas</a></li>
+              <li><a href="./pages/error404.html">Cambios y devoluciones</a></li>
+              <li><a href="./pages/error404.html">Términos y condiciones</a></li>
             </ul>
           </div>
 
@@ -180,8 +616,8 @@
           <p>© 2026 KICKORA. Todos los derechos reservados.</p>
 
           <div>
-            <a href="#">Política de privacidad</a>
-            <a href="#">Términos</a>
+            <a href="./pages/error404.html">Política de privacidad</a>
+            <a href="./pages/error404.html">Términos</a>
           </div>
         </div>
       </div>
