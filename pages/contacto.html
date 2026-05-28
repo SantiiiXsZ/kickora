@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Kickora | Tienda de Zapatillas</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-kickora">
@@ -89,8 +90,161 @@
         </div>
       </section>
     </header>
-    <main></main>
-        <footer class="footer-kickora">
+    <main>
+      <div
+        class="container my-5 bg-white p-4 p-md-5 rounded-4 shadow-sm border-light"
+      >
+        <!-- h1 con tamaño de encabezado 2 (fs-2), texto negro/oscuro (text-dark) y sin márgenes (m-0) -->
+        <h1 class="fw-bold m-0 fs-2 text-dark">Contacto</h1>
+        <!-- Parrafo con texto gris (text-muted), tamaño de letra chico (small) y margen superior leve (mt-1) -->
+        <p class="text-muted small mt-1 ps-2">Estamos para ayudarte</p>
+        <!-- Fila principal que divide Datos y Mapa -->
+        <div class="row g-4 align-items-start mb-4">
+          <!-- Columna Izquierda: Bloque de Información -->
+          <div class="col-12 col-md-6 ps-md-4">
+            <address class="d-flex flex-column gap-3 mb-0 fst-normal">
+              <!-- Dirección -->
+              <div class="d-flex align-items-start">
+                <i class="bi bi-geo-alt-fill me-3 fs-5 text-dark"></i>
+                <div>
+                  <h6 class="fw-bold m-0 small text-secondary">Dirección</h6>
+                  <p class="m-0 small text-dark fw-medium">
+                    Av. Siempre Viva 1230,<br />CABA, Argentina
+                  </p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="d-flex align-items-start">
+                <i class="bi bi-envelope-fill me-3 fs-5 text-dark"></i>
+                <div>
+                  <h6 class="fw-bold m-0 small text-secondary">Email</h6>
+                  <p class="m-0 small text-dark fw-medium">hola@kickora.com</p>
+                </div>
+              </div>
+
+              <!-- Teléfono -->
+              <div class="d-flex align-items-start">
+                <i class="bi bi-telephone-fill me-3 fs-5 text-dark"></i>
+                <div>
+                  <h6 class="fw-bold m-0 small text-secondary">Teléfono</h6>
+                  <p class="m-0 small text-dark fw-medium">+54 11 5025-5232</p>
+                </div>
+              </div>
+
+              <!-- Horario de atención -->
+              <div class="d-flex align-items-start">
+                <i class="bi bi-clock-fill me-3 fs-5 text-dark"></i>
+                <div>
+                  <h6 class="fw-bold m-0 small text-secondary">
+                    Horario de atención
+                  </h6>
+                  <p class="m-0 small text-dark fw-medium">
+                    Lunes a Viernes de 9 a 18 hs.
+                  </p>
+                </div>
+              </div>
+              <!-- Formulario: Envianos tu mensaje -->
+              <div class="mt-5 ps-md-2">
+                <h2 class="fw-bold fs-4 text-dark mb-4">Envianos tu mensaje</h2>
+                <form>
+                  <div class="row g-3">
+                    <!-- Campo Nombre -->
+                    <div class="col-12 col-md-6">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control bg-light border-0 shadow-none text-dark"
+                          id="inputNombre"
+                          placeholder="Nombre"
+                          required
+                        />
+                        <label for="inputNombre" class="text-secondary small"
+                          >Nombre</label
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Campo Email -->
+                    <div class="col-12 col-md-6">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="email"
+                          class="form-control bg-light border-0 shadow-none text-dark"
+                          id="inputEmail"
+                          placeholder="Email"
+                          required
+                        />
+                        <label for="inputEmail" class="text-secondary small"
+                          >Email</label
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Campo Asunto -->
+                    <div class="col-12">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control bg-light border-0 shadow-none text-dark"
+                          id="inputAsunto"
+                          placeholder="Asunto"
+                          required
+                        />
+                        <label for="inputAsunto" class="text-secondary small"
+                          >Asunto</label
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Campo Mensaje -->
+                    <div class="col-12">
+                      <div class="form-floating mb-4">
+                        <textarea
+                          class="form-control bg-light border-0 shadow-none text-dark"
+                          id="inputMensaje"
+                          placeholder="Mensaje"
+                          style="height: 120px"
+                          required
+                        ></textarea>
+                        <label for="inputMensaje" class="text-secondary small"
+                          >Mensaje</label
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Botón Enviar Mensaje -->
+                    <div class="col-12 text-center text-md-start">
+                      <button
+                        type="submit"
+                        class="btn btn-block fw-bold py-3 px-5 text-dark"
+                        style="background-color: #c5e744; border-radius: 8px"
+                      >
+                        ENVIAR MENSAJE
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </address>
+          </div>
+
+          <!-- Columna Derecha: El Mapa -->
+          <div class="col-12 col-lg-6">
+            <div class="mapa-contacto h-100">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.048708037615!2d-58.47281645275863!3d-34.628209384296284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95874c5f32d%3A0xe6eae433d07a3d57!2sav%20siempre%20viva!5e0!3m2!1ses-419!2sar!4v1779850672813!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-kickora">
       <div class="container">
         <div class="row gy-4">
           <div class="col-12 col-md-6 col-lg-3">
@@ -150,14 +304,12 @@
 
             <ul class="links-footer">
               <li>
-                <a href="./preguntas-frecuentes.html"
-                  >Preguntas frecuentes</a
-                >
+                <a href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
               </li>
               <li><a href="./talles.html">Guía de talles</a></li>
-              <li><a href="#">Envíos y entregas</a></li>
-              <li><a href="#">Cambios y devoluciones</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="./error404.html">Envíos y entregas</a></li>
+              <li><a href="./error404.html">Cambios y devoluciones</a></li>
+              <li><a href="./error404.html">Términos y condiciones</a></li>
             </ul>
           </div>
 
@@ -189,8 +341,8 @@
           <p>© 2026 KICKORA. Todos los derechos reservados.</p>
 
           <div>
-            <a href="#">Política de privacidad</a>
-            <a href="#">Términos</a>
+            <a href="./error404.html">Política de privacidad</a>
+            <a href="./error404.html">Términos</a>
           </div>
         </div>
       </div>
