@@ -1,4 +1,4 @@
-!doctype html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -64,12 +64,40 @@
             </ul>
 
             <div class="d-flex align-items-center gap-2 acciones-kickora">
-              <a href="#" class="boton-icono" aria-label="Buscar">
-                <i class="bi bi-search"></i>
+              <form
+                class="d-flex align-items-center gap-2"
+                role="search"
+                action="./categorias.html"
+                method="GET"
+              >
+                <input
+                  class="form-control rounded-pill buscador-input"
+                  type="search"
+                  name="buscar"
+                  placeholder="Buscar productos..."
+                  aria-label="Buscar"
+                />
+
+                <button
+                  class="btn btn-buscar-navbar rounded-circle"
+                  type="submit"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <a
+                href="./detalle-carrito.html"
+                class="btn-carrito-navbar"
+                aria-label="Ir al carrito"
+              >
+                <i class="bi bi-cart3"></i>
               </a>
 
-              <a href="./categorias.html" class="btn boton-principal-kickora">
-                Ver colección
+              <a
+                href="./login.html"
+                class="btn boton-principal-kickora"
+              >
+                Iniciar Sesión
               </a>
             </div>
           </div>
