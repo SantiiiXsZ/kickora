@@ -91,7 +91,7 @@ git clone https://github.com/SantiiiXsZ/kickora.git
 Este proyecto fue desarrollado por el equipo de Kickora:
 
 | Nombre |
-|---|---|
+|---|
 | Victoria Ponce |
 | Eliana Gatti |
 | Santiago Robles |
