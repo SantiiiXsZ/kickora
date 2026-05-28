@@ -65,35 +65,28 @@
             </ul>
 
             <div class="d-flex align-items-center gap-2 acciones-kickora">
-              <div class="buscador-navbar">
+              <form
+                class="d-flex align-items-center gap-2"
+                role="search"
+                action="./pages/categorias.html"
+                method="GET"
+              >
+                <input
+                  class="form-control rounded-pill buscador-input"
+                  type="search"
+                  name="buscar"
+                  placeholder="Buscar productos..."
+                  aria-label="Buscar"
+                />
+
                 <button
-                  class="btn-buscar"
-                  id="btnAbrirBuscador"
-                  type="button"
-                  aria-label="Abrir buscador"
+                  class="btn btn-buscar-navbar rounded-circle"
+                  type="submit"
                 >
                   <i class="bi bi-search"></i>
                 </button>
+              </form>
 
-                <div class="buscador-dropdown" id="buscadorDropdown">
-                  <div class="buscador-box">
-                    <i class="bi bi-search"></i>
-                    <input
-                      type="text"
-                      id="inputBuscarProducto"
-                      placeholder="Buscar zapatillas..."
-                      autocomplete="off"
-                    />
-                    <button id="btnCerrarBuscador" type="button">
-                      <i class="bi bi-x-lg"></i>
-                    </button>
-                  </div>
-
-                  <div class="resultados-busqueda" id="resultadosBusqueda">
-                    <p class="busqueda-vacia">Escribí para buscar productos</p>
-                  </div>
-                </div>
-              </div>
               <a href="./pages/login.html" class="btn boton-principal-kickora">
                 Iniciar Sesión
               </a>
