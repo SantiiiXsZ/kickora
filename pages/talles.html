@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="E-commerce de zapatillas en Argentina" />
     <meta name="author" content="RollingCode" />
-    <link rel="icon" type="image/png" href="../img/favicon/favicon.png"/>
+    <link rel="icon" type="image/png" href="../img/favicon/favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -52,7 +52,9 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" href="./talles.html">Guía de talles</a>
+                <a class="nav-link active" href="./talles.html"
+                  >Guía de talles</a
+                >
               </li>
 
               <li class="nav-item">
@@ -86,11 +88,15 @@
                   <i class="bi bi-search"></i>
                 </button>
               </form>
-
               <a
-                href="./login.html"
-                class="btn boton-principal-kickora"
+                href="./detalle-carrito.html"
+                class="btn-carrito-navbar"
+                aria-label="Ir al carrito"
               >
+                <i class="bi bi-cart3"></i>
+              </a>
+
+              <a href="./login.html" class="btn boton-principal-kickora">
                 Iniciar Sesión
               </a>
             </div>
@@ -113,140 +119,102 @@
       </section>
     </header>
     <main>
+      <section class="guia-section container py-5">
+        <div class="guia-card">
+          <span class="guia-etiqueta"> 07. GUÍA DE TALLES </span>
 
-  <section class="guia-section container py-5">
+          <h1 class="guia-title">Guía de talles</h1>
 
-    <div class="guia-card">
+          <p class="guia-subtitle">Encontrá el talle perfecto para vos.</p>
 
-      <span class="guia-etiqueta">
-        07. GUÍA DE TALLES
-      </span>
+          <!-- Tabs -->
+          <div class="guia-tabs">
+            <button class="tab-activo">Hombre</button>
 
-      <h1 class="guia-title">
-        Guía de talles
-      </h1>
+            <button>Mujer</button>
 
-      <p class="guia-subtitle">
-        Encontrá el talle perfecto para vos.
-      </p>
+            <button>Kids</button>
+          </div>
 
-      <!-- Tabs -->
-      <div class="guia-tabs">
+          <!-- Tabla -->
+          <div class="table-responsive">
+            <table class="table guia-table">
+              <tbody>
+                <tr>
+                  <th>AR</th>
+                  <td>38</td>
+                  <td>39</td>
+                  <td>40</td>
+                  <td>41</td>
+                  <td>42</td>
+                  <td>43</td>
+                  <td>44</td>
+                  <td>45</td>
+                </tr>
 
-        <button class="tab-activo">
-          Hombre
-        </button>
+                <tr>
+                  <th>US</th>
+                  <td>6</td>
+                  <td>6.5</td>
+                  <td>7.5</td>
+                  <td>8.5</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>10.5</td>
+                  <td>11.5</td>
+                </tr>
 
-        <button>
-          Mujer
-        </button>
+                <tr>
+                  <th>UK</th>
+                  <td>5</td>
+                  <td>5.5</td>
+                  <td>6.5</td>
+                  <td>7.5</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>9.5</td>
+                  <td>10.5</td>
+                </tr>
 
-        <button>
-          Kids
-        </button>
+                <tr>
+                  <th>CM</th>
+                  <td>24.5</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>26.5</td>
+                  <td>27.5</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>29.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-      </div>
+          <!-- Medir -->
+          <div class="medir-container">
+            <div class="medir-texto">
+              <h3>¿Cómo medir tu pie?</h3>
 
-      <!-- Tabla -->
-      <div class="table-responsive">
+              <ol>
+                <li>Apoyá tu pie sobre una hoja.</li>
+                <li>Marcá el talón y el dedo más largo.</li>
+                <li>Medí la distancia en centímetros.</li>
+              </ol>
+            </div>
 
-        <table class="table guia-table">
+            <div class="medir-icono">👣</div>
+          </div>
 
-          <tbody>
-
-            <tr>
-              <th>AR</th>
-              <td>38</td>
-              <td>39</td>
-              <td>40</td>
-              <td>41</td>
-              <td>42</td>
-              <td>43</td>
-              <td>44</td>
-              <td>45</td>
-            </tr>
-
-            <tr>
-              <th>US</th>
-              <td>6</td>
-              <td>6.5</td>
-              <td>7.5</td>
-              <td>8.5</td>
-              <td>9</td>
-              <td>10</td>
-              <td>10.5</td>
-              <td>11.5</td>
-            </tr>
-
-            <tr>
-              <th>UK</th>
-              <td>5</td>
-              <td>5.5</td>
-              <td>6.5</td>
-              <td>7.5</td>
-              <td>8</td>
-              <td>9</td>
-              <td>9.5</td>
-              <td>10.5</td>
-            </tr>
-
-            <tr>
-              <th>CM</th>
-              <td>24.5</td>
-              <td>25</td>
-              <td>26</td>
-              <td>26.5</td>
-              <td>27.5</td>
-              <td>28</td>
-              <td>29</td>
-              <td>29.5</td>
-            </tr>
-
-          </tbody>
-
-        </table>
-
-      </div>
-
-      <!-- Medir -->
-      <div class="medir-container">
-
-        <div class="medir-texto">
-
-          <h3>
-            ¿Cómo medir tu pie?
-          </h3>
-
-          <ol>
-            <li>Apoyá tu pie sobre una hoja.</li>
-            <li>Marcá el talón y el dedo más largo.</li>
-            <li>Medí la distancia en centímetros.</li>
-          </ol>
-
+          <!-- Aviso -->
+          <div class="guia-alerta">
+            Si estás entre dos talles, te recomendamos elegir el más grande.
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="medir-icono">
-
-          👣
-
-        </div>
-
-      </div>
-
-      <!-- Aviso -->
-      <div class="guia-alerta">
-
-        Si estás entre dos talles, te recomendamos elegir el más grande.
-
-      </div>
-
-    </div>
-
-  </section>
-
-</main>
-
-        <footer class="footer-kickora">
+    <footer class="footer-kickora">
       <div class="container">
         <div class="row gy-4">
           <div class="col-12 col-md-6 col-lg-3">
@@ -306,9 +274,7 @@
 
             <ul class="links-footer">
               <li>
-                <a href="./preguntas-frecuentes.html"
-                  >Preguntas frecuentes</a
-                >
+                <a href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
               </li>
               <li><a href="./talles.html">Guía de talles</a></li>
               <li><a href="./error404.html">Envíos y entregas</a></li>
