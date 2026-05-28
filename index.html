@@ -65,15 +65,37 @@
             </ul>
 
             <div class="d-flex align-items-center gap-2 acciones-kickora">
-              <a href="#" class="boton-icono" aria-label="Buscar">
-                <i class="bi bi-search"></i>
-              </a>
+              <div class="buscador-navbar">
+                <button
+                  class="btn-buscar"
+                  id="btnAbrirBuscador"
+                  type="button"
+                  aria-label="Abrir buscador"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
 
-              <a
-                href="./pages/categorias.html"
-                class="btn boton-principal-kickora"
-              >
-                Ver colección
+                <div class="buscador-dropdown" id="buscadorDropdown">
+                  <div class="buscador-box">
+                    <i class="bi bi-search"></i>
+                    <input
+                      type="text"
+                      id="inputBuscarProducto"
+                      placeholder="Buscar zapatillas..."
+                      autocomplete="off"
+                    />
+                    <button id="btnCerrarBuscador" type="button">
+                      <i class="bi bi-x-lg"></i>
+                    </button>
+                  </div>
+
+                  <div class="resultados-busqueda" id="resultadosBusqueda">
+                    <p class="busqueda-vacia">Escribí para buscar productos</p>
+                  </div>
+                </div>
+              </div>
+              <a href="./pages/login.html" class="btn boton-principal-kickora">
+                Iniciar Sesión
               </a>
             </div>
           </div>
@@ -583,8 +605,12 @@
               </li>
               <li><a href="./pages/talles.html">Guía de talles</a></li>
               <li><a href="./pages/error404.html">Envíos y entregas</a></li>
-              <li><a href="./pages/error404.html">Cambios y devoluciones</a></li>
-              <li><a href="./pages/error404.html">Términos y condiciones</a></li>
+              <li>
+                <a href="./pages/error404.html">Cambios y devoluciones</a>
+              </li>
+              <li>
+                <a href="./pages/error404.html">Términos y condiciones</a>
+              </li>
             </ul>
           </div>
 

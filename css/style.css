@@ -163,6 +163,155 @@ h3,
   box-shadow: none;
 }
 
+/* BUSCADOR NAVBAR */
+
+.buscador-navbar {
+  position: relative;
+}
+
+.btn-buscar {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.btn-buscar:hover {
+  background-color: #c6ff00;
+  border-color: #c6ff00;
+  transform: scale(1.05);
+}
+
+.buscador-dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 360px;
+  padding: 14px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+  z-index: 9999;
+  display: none;
+}
+
+.buscador-dropdown.activo {
+  display: block;
+}
+
+.buscador-box {
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f7f7f7;
+}
+
+.buscador-box i {
+  color: #111;
+}
+
+.buscador-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #111;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.buscador-box input::placeholder {
+  color: #777;
+}
+
+.buscador-box button {
+  border: none;
+  background: transparent;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultados-busqueda {
+  max-height: 330px;
+  overflow-y: auto;
+  margin-top: 12px;
+}
+
+.item-resultado {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #111;
+  transition: background-color 0.2s ease;
+}
+
+.item-resultado:hover {
+  background-color: #f1f1f1;
+}
+
+.item-resultado img {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.info-resultado h4 {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.info-resultado p {
+  margin: 3px 0 0;
+  font-size: 0.78rem;
+  color: #666;
+}
+
+.precio-resultado {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.busqueda-vacia,
+.sin-resultados {
+  margin: 0;
+  padding: 14px 8px;
+  color: #777;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .buscador-dropdown {
+    position: fixed;
+    top: 88px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
+}
+
 /* BREADCRUMB KICKORA */
 
 .breadcrumb-kickora {
