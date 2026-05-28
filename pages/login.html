@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Iniciar sesión en Kickora, tienda de zapatillas urbanas y deportivas."
+    />
+    <meta name="author" content="RollingCode" />
+
+    <title>Iniciar sesión | Kickora</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/auth.css" />
+  </head>
+
+  <body>
+    <main class="auth-page">
+      <section class="auth-container">
+        <!-- Lado izquierdo con imagen -->
+        <div class="auth-image-side">
+          <div class="auth-image-overlay">
+            <a href="./index.html" class="auth-logo">Kickora</a>
+
+            <div class="auth-image-content">
+              <span class="auth-badge">Sneakers & Streetwear</span>
+              <h1>Tu estilo empieza desde el primer paso.</h1>
+              <p>
+                Iniciá sesión y seguí explorando las últimas zapatillas,
+                lanzamientos y colecciones de Kickora.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado derecho con formulario -->
+        <div class="auth-form-side">
+          <div class="auth-card">
+            <a href="./index.html" class="auth-mobile-logo">Kickora</a>
+
+            <div class="auth-header">
+              <h2>Iniciar sesión</h2>
+              <p>Ingresá a tu cuenta para continuar.</p>
+            </div>
+
+            <form class="auth-form">
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <div class="input-wrapper">
+                  <i class="bi bi-envelope"></i>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="ejemplo@correo.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <div class="input-wrapper">
+                  <i class="bi bi-lock"></i>
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    placeholder="Ingresá tu contraseña"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="auth-options">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="remember"
+                  />
+                  <label class="form-check-label" for="remember">
+                    Recordarme
+                  </label>
+                </div>
+
+                <a href="./error404.html" class="forgot-link">¿Olvidaste tu contraseña?</a>
+              </div>
+
+              <button type="submit" class="btn auth-btn">
+                Iniciar sesión
+              </button>
+            </form>
+
+            <div class="auth-separator">
+              <span>o</span>
+            </div>
+
+            <button class="btn google-btn" type="button">
+              <i class="bi bi-google"></i>
+              Continuar con Google
+            </button>
+
+            <p class="auth-change">
+              ¿No tenés cuenta?
+              <a href="./register.html">Registrate</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
